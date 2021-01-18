@@ -78,3 +78,12 @@ introh2.addEventListener('dblclick', () => {
 //   introP.style.display = 'block';
 // });
 
+// window - resize
+// message in footer that shows current window size
+window.addEventListener("resize", windowDiemensions());
+
+function windowDiemensions() {
+  let width = window.outerWidth;
+  let height = window.outerHeight;
+  document.getElementById('diemensions').innerHTML = `width = ${width} height = ${height}`;
+}
