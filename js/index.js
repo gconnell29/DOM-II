@@ -80,7 +80,7 @@ introh2.addEventListener('dblclick', () => {
 
 // window - resize
 // message in footer that shows current window size
-window.addEventListener("resize", windowDiemensions());
+window.addEventListener("resize", windowDiemensions);
 
 function windowDiemensions() {
   let width = window.outerWidth;
